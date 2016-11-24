@@ -9,4 +9,8 @@ class Player
     @HP = DEFAULT_HP
   end
 
+  def receive_attack
+    @HP -= 10
+  end
+
 end
