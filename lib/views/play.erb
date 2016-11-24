@@ -2,6 +2,7 @@
 
 <h1> <%=@game.players.first.name%>: <%=@game.players.first.HP%>/60 HP</h1>
 <h1> <%=@game.players.last.name%>: <%=@game.players.last.HP%>/60 HP</h1>
+<h1> <%=@game.players.first.name%>'s turn </h1>
 <form action="/attack">
   <input type="submit" value="Attack">
 </form>

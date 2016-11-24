@@ -21,8 +21,8 @@ describe Game do
 
   it "can attack a player" do
     allow(player).to receive(:receive_attack)
-
-    expect(game.attack).to eq [game.player2, game.player1]
+    expect(player).to receive(:receive_attack)
+    game.attack
   end
 
   it "stores players in an array" do
