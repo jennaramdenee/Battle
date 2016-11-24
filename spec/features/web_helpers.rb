@@ -12,3 +12,7 @@ end
 def return_to_game
   click_button "Return To Game"
 end
+
+def start_again
+  click_button "Start Again"
+end

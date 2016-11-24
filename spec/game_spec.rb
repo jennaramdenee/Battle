@@ -33,10 +33,4 @@ describe Game do
     expect(game.turn).to eq [game.player2, game.player1]
   end
 
-  # it "ends the game when someone reaches 0HP" do
-  #   6.times { game.attack }
-  #   expect()
-  #
-  # end
-
 end
