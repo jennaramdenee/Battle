@@ -20,4 +20,13 @@ describe Player do
     expect{player.receive_attack}.to change{player.HP}.by(-10)
   end
 
+  it "can check if a player still has life left" do
+    expect(player.dead?).to eq false
+  end
+
+  it "can check if a player has no life left" do
+    6.times { player.receive_attack }
+    expect(player.dead?).to eq true
+  end
+
 end
