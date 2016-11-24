@@ -13,6 +13,7 @@ class Game
   def attack
     attacked_player = @players.last
     attacked_player.receive_attack
+    turn
   end
 
   def turn
