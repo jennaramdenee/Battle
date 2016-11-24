@@ -7,4 +7,5 @@ end
 
 def attack
   click_button "Attack"
+  click_button "Return To Game"
 end
