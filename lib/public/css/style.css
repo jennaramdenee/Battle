@@ -1,7 +1,22 @@
 body {
-  font-family:
+  font-family: verdana;
+  font-size: 16px;
+  background-color: #fff7e6
 }
 
 .main {
-  margin: 10px;
+  margin: auto;
+  border-color: #e69900;
+  border-style: double;
+  width: 450px;
+  text-align: center;
+  padding: 20px 10px ;
+}
+
+img {
+  padding: 20px;
+  margin: auto;
+  display: block;
+  width: 200px;
+
 }
