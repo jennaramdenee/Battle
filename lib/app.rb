@@ -6,6 +6,10 @@ class Battle < Sinatra::Base
 
   enable :sessions
 
+  before do
+    @game = Game.instance
+  end
+
   get '/' do
     erb(:index)
   end
@@ -18,18 +22,15 @@ class Battle < Sinatra::Base
   end
 
   get '/play' do
-    @game = Game.instance
     erb(:play)
   end
 
   get '/attack' do
-    @game = Game.instance
     @game.attack
     erb(:attack)
   end
 
   post '/switch-turns' do
-    @game = Game.instance
     if !@game.players.last.dead?
       @game.turn
       redirect('/play')
@@ -39,7 +40,6 @@ class Battle < Sinatra::Base
   end
 
   get '/end_game' do
-    @game = Game.instance
     erb(:end_game)
   end
 
