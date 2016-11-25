@@ -4,6 +4,11 @@ body {
   background-color: #fff7e6
 }
 
+/*div {
+  border-color: black;
+  border-style: solid;
+}*/
+
 .main {
   margin: auto;
   border-color: #e69900;
@@ -18,5 +23,37 @@ img {
   margin: auto;
   display: block;
   width: 200px;
+}
 
+.container {
+  width: 1000px;
+  height: 500px;
+  margin: auto;
+  padding: 20px 10px;
+}
+
+.player1 {
+  width:450px;
+  height: 400px;
+  float: left;
+  border-style: double;
+  margin: 20px;
+  text-align: center;
+  /*position: relative;*/
+}
+
+.player2 {
+  width: 450px;
+  height: 400px;
+  float: left;
+  border-style: double;
+  margin: 20px;
+  text-align: center;
+  /*position: relative;*/
+}
+
+.button {
+  height: 200px;
+  width: 200px;
+  margin: auto;
 }
