@@ -1,0 +1,5 @@
+<h1> <%=@game.players.first.name%> has attacked <%=@game.players.last.name%>! 10 points deducted
+
+  <form action='/switch-turns' method="post">
+    <input type="submit" value="Return To Game">
+  </form>
