@@ -27,7 +27,7 @@ img {
 
 .container {
   width: 1000px;
-  height: 300px;
+  height: 450px;
   margin: auto;
   padding: 20px 10px;
 }
@@ -37,6 +37,7 @@ img {
   height: 400px;
   float: left;
   border-style: double;
+  border-color: #e69900;
   margin: 20px;
   text-align: center;
   /*position: relative;*/
@@ -47,13 +48,15 @@ img {
   height: 400px;
   float: left;
   border-style: double;
+  border-color: #e69900;
   margin: 20px;
   text-align: center;
   /*position: relative;*/
 }
 
 .button {
-  height: 200px;
+  height: 50px;
   width: 200px;
-  margin: auto;
+  margin: 20px;
+  /*border-radius: 5px;*/
 }
